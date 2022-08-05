@@ -1,0 +1,53 @@
+Java Syllabus:
+     Introduction
+	 History Of Java
+	 Features Of Java
+	    - Simple
+		- Platform Independent
+		- Architectural Neutral
+		- Portable
+		- Multithreaded
+		- Networked
+		- Distributed
+		- High Performance
+		- Robust
+		- Dynamic
+		- Interpreted
+		- Secured
+		- Object Oriented Prog. Lang.
+	 Fundamental Datatypes in Java
+     	 integer Category Datatypes
+			byte
+			short
+			int
+			long
+		 float
+		 character
+		 boolean
+	  Reserved Words/Keywords in Java
+	  Variables In Java
+	  Constants In Java (final)
+		- final at variable level
+		- final at method level
+		- final at class level
+	  OOPS Features
+		- class
+		- objects
+		- Data Abstraction
+		- Data Encapsulation
+		- Inheritance
+		- Polymorphism
+		- Dynamic Binding
+		- Message Passing
+	  Structure Of Java Program
+	  Wrapper Classes In Java
+	  Constructors In Java
+		Types of Constructors
+			- Default/zero argument constructor
+			- Parameterised constructor
+	  This keyword
+	  Abstract Classes
+	  Interfaces
+		
+	
+	 

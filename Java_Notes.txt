@@ -1,0 +1,96 @@
+> Software is collection various programs.
+  Types of Software :
+
+  > System Software : 
+     - This software used to develope functions of hardware devices.
+     - Prog. Lang -> Assembly Lang., C Lang.
+
+  > Application Software : 
+    - This s/w is used to develop organization oriented application or to solve specific use cases.
+    
+    -> Standalone Application        
+    -> Distributed Application
+  
+  Internet/Web Software
+    -> This s/w is used to develope organization oriented problems in a distributed manner.
+
+History Of Java :
+    - Team in Sun Microsystem started working on Java language dev. to solve the consumer devices problems.
+    - Java development has started in 1990
+    - James Gosling(Founder/Father Of Java) lead this Java Devlopment team.
+    - Initially Java named as OAK Language.
+    - In 1995 they have renames to Java.
+    - When Java initially released they have released in three flavours.
+           - J2SE(Java 2 Standard Edition)
+             - It is used mainly for devloping Standalone application.
+
+           - J2EE(Java 2 Enterprise Edition)
+             - It is mainly used for devloping Web Based application.
+
+           - J2ME(Java 2 Micro/Mobile Edition)
+             - It is mainly used for devloping Mobile OS and it's related application
+Tech Version       s/w version                Performance Comparison
+====================================================================
+Java              JDK 1.0 & JDK 1.1           Tortoise
+Java 2            JDK 1.2                     Dog 
+                  JDK 1.3 & JDK 1.4           Horse
+Java 5            JDK 1.5                     Tiger
+                  JDK 1.6                     Mustang
+
+* Features of Java :- 
+          1. Simple
+          2. Platform Independent
+          3. Architectural Neutral
+          4. Portable
+          5. Multithreaded
+          6. Networked
+          7. Distributed
+          8. High Performance
+          9. Robust
+          10. Dynamic
+          11. Interpreted
+          12. Secured
+          13. OOPL 
+
+  1. Simple :-
+        Java is one of the simple programming language because of the following points.
+              - Java programming doesn't support a complex concept called pointers.
+              - Java introduced concept of byte code.
+
+              Q. Define bytecode & JVM?
+                ByteCode : ByteCode is the set of optimised instructions generated during compilation phase & it is more powerful than ordinary pointer code.
+                JVM : JVM is set of programs developed by Sun Microsytems & supplied as a part of jdk for reading line by line of byte code & convert into native understanding form of OS.
+
+                * Java language is one of the compiled & interpreted programming language.
+              
+              - Memory Allocation:
+                   Java programming execution environment contain inbuilt garbage collection program for automatic memory management for strenghning the performance of Java/J2EE applications.
+              
+              Q. Define Garbage Collector.
+              => Garbage Collector is one of the background system java program which is running internally along with our regular Java program for collecting unused/unreferenced memory space for improving the performance of our applications.
+
+                 
+  2. Platform Independent :-
+     A platform independent technology/language related applications rung on every OS, without considering their vendors.
+     In order to say particular language is platform independent if and only if it has to satisfy the following properties.
+       - The language must have data types & they must take same amount of memory space.
+       - The language must contain some special internal programs which will convert from one format of one OS to another format of another OS.
+     The languages like c, c++ are treated as platform dependent whereas Java language is treated as platform independent language.
+      
+  3. Architectural Neutral :
+     An application is said to be architectural neutral if and only if the application runs on every processor without considering their architectures and vendors(providors).
+     A language is said to be architectural neutral, it has to satisfy the following property.
+     - The s/w must have the special internal programs which will convert the factors of one processor to factors of another processor.
+     - The language like Java is one of the architectural neutral language because it satisfies the above property.
+     - The basic aim of Sun microsystem is that Java applications must run without considering about software benchmarks and hardware benchmarks.
+
+  4. Portable : 
+     A portable is one which will run on every operating system and one every processor without considering their vendors and architectures.
+     Tha applications of c, c++, pascal etc. are treated as non portable applications.
+     All the Java applications are treated as portable applications.
+
+     According to Sun Microsystem :
+
+          Portability = Platform Independent + Architectural Neutral
+
+
