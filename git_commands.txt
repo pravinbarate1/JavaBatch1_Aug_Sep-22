@@ -1,0 +1,12 @@
+handly git commands.
+
+1. git clone repo_url 
+
+2. git add .
+3. git commit -m "commit message"
+4. git push origin
+
+5. git pull
+
+6.  git remote show origin 
+
