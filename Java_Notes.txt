@@ -71,12 +71,15 @@ Java 5            JDK 1.5                     Tiger
 
                  
   2. Platform Independent :-
-     A platform independent technology/language related applications rung on every OS, without considering their vendors.
+     A platform independent technology/language related applications run on every OS, without considering their vendors.
      In order to say particular language is platform independent if and only if it has to satisfy the following properties.
        - The language must have data types & they must take same amount of memory space.
        - The language must contain some special internal programs which will convert from one format of one OS to another format of another OS.
      The languages like c, c++ are treated as platform dependent whereas Java language is treated as platform independent language.
       
+      - 1 byte = 8 bits
+      
+
   3. Architectural Neutral :
      An application is said to be architectural neutral if and only if the application runs on every processor without considering their architectures and vendors(providors).
      A language is said to be architectural neutral, it has to satisfy the following property.
@@ -92,5 +95,69 @@ Java 5            JDK 1.5                     Tiger
      According to Sun Microsystem :
 
           Portability = Platform Independent + Architectural Neutral
+  
+  5. Multithreaded :
+      Performing multiple tasks at a time is know as multitasking.
+      Multitasking happen on Process or in the system program.
 
+      - Multithreading is one of the distinct facility of Java programming.
+      - The basic aim of multithreading is that to achieve concurrent execution.
+      - A flow of control is know as thread. 
+      - A basic use of thread is to excute user/programmer defined functions.
+      - Java Program :
+          Foreground/Child thread
+          Background/Parent thread
+      - Multitasking is one of the specialized form of OS.
+      In java programming multithreading applications are developed by following :
+         1. java.lang.Thread (Class)
+         2. java.lang.Runnable (Interface)
+      - A foreground thread is one which always executes logic of the java program or user/programmer defined methods of Java.
+      - A Background thread is one which always monitors executor status of the forground threads.\
+  
+  6. Networked :
+     The basic aim of networking is to share the data between multiple machines which are located either in the same network (local sharing) or in different network(global sharing).
+     Collection of interconnected autonoumous/non autonoumous computers with the server is know as networking.
+     According to industry standards two types of networks are there :
+       -  Untrusted Network
+            An untrusted network is one in which their exists collection of interconnected non automnoumous computers with the server.
+      -  Trusted Network
+          Trusted network is one in which there exist collection of interconnected automnoumous computers with the servers.
+          
+  7. Distributed : 
+      According to the industry standards, in Java realtime applications.
+      Applications are classifieds into two types they are :
+         1. Centralized Applications
+         2. Distributed Applications
 
+      Java has it's own package for deveoping networking related applications i.e java.net.*;
+
+    Q. What is the difference between URL(Uniform Resource Locater) & URI (Uniform Resource Identifier).
+      - The place or address where the application is running is known as URL.
+      - The place/address where the application is residing is know as URI.
+  
+  8. High Performance :
+      Java is one of the high perfromance programming language because of the following reasons.
+      - Because of magic of bytecode 
+      - Because of magic of garbage collector, automatic memory management is taken care.
+      - Java programming is free from pointers.
+  
+  9. Robust : 
+     - Java is known as Robust as it is capable of handling run-time errors, supports automatic garbage collection & exception handling & memory management.
+       Below class & interface is used for the exception handling.
+        - java.lang.Exception (Class)
+        - java.lang.Throwable (Interface)
+     - Due to runtime exception handling java program doesn't terminate in between the execution. If any exception occurs at runtime it will handled and the program execution continued.
+
+  10. Dynamic :
+      - In most of the programming language, memory allocation technicques are divided into two types they are :
+            1. Static Memory Allocation :
+              - A static memory allocation is one in which the mermory will be allocated at compile time.
+              - The limitations of static memory allocations are:
+                 1. Waste of memory space.
+                 2. loss of data 
+                 3. Overlapping of existing data.
+
+            2. Dynamic Memory Allocation
+              - A Dynamic memory allocation is one in which the memory will allocated at runtime time on need basis.
+              - Dynamic memory allocation overcomes the limitation of static memory allocatino.
+              - In java for allocating memory dynamically we use operator called "new".
