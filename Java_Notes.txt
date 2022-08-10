@@ -161,3 +161,27 @@ Java 5            JDK 1.5                     Tiger
               - A Dynamic memory allocation is one in which the memory will allocated at runtime time on need basis.
               - Dynamic memory allocation overcomes the limitation of static memory allocatino.
               - In java for allocating memory dynamically we use operator called "new".
+  
+  11. Interpreted :
+      In older versions of Java compilation phase is so faster than interpretation phase.
+      Industry has complained to the Sun Microsystem saying that compilation phase is very faster and interpretation phase is very slow.
+      To solve this issue sun microsystem has developed a program called JIT(Just In Time Compiler) and added as part of JVM to speed up the interpreation phase.
+      In the current version of Java interpretation phase is so faster than compilation phase.
+      Hence Java is one of the highly interpreted programming language.
+  
+    :\> javac App.java                        --> javac is Java compiler
+      -> above step will generate App.class
+    :\> java App              ---> java is Java interpreter
+
+    Q. Define JIT.
+    -> JIT is set of programs developed by Sun Microsystem and added as feature to JVM to speed up the interpretation phase by reading the entire section of the bytecode and converting it to native understanding for of OS.
+
+  12. Secured :
+        - No Explicit Pointer
+        - Java programs run inside a virtual machine. (JVM)
+        - Classloader
+           Classloader in Java is a part of the Java Runtime Environment(JRE) which is used to load Java Classes into the Java Virtual Machine(JVM) dynamically. It adds security by separating the package for the class of the local file system from those that are imported from network sources.
+        - Byte Code Verifier : 
+             It checks the code fragments for illegal code that can violate access rights to objects.
+        - Security Manager : 
+            It determines what resources a class can access such as reading and writing to the local disk.
