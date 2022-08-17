@@ -185,3 +185,80 @@ Java 5            JDK 1.5                     Tiger
              It checks the code fragments for illegal code that can violate access rights to objects.
         - Security Manager : 
             It determines what resources a class can access such as reading and writing to the local disk.
+  
+  13. OOPL (Object Oriented Programming language) :-
+      
+      1. Procedure Oriented prog. Lang. 
+          e.g. c, pascal, cobol, ada 
+      
+      2. Object Oriented Prog. Lang
+         e.g. Small Talk, Lisp, Object Pascal, Object COBOL, C++, Java, .Network
+           C++ is partial object oriented. 
+            - Every C++ program can be written like c prog.
+            - 50% of OOPS principles not satisfied.
+            - Friend Function
+            
+
+      * Fundamental Datatypes in Java :
+        In Java programming we have 8 fundamental datatypes which are categorised into 4 categories or groups they are:
+         
+           1. Integer Category Datatypes
+           2. Float
+           3. Character
+           4. Boolean
+
+        1. Integer Category Datatype:
+            This category datatypes are used for storing integer data in the main memory of the computer by allocating sufficient amount of memory space.
+            In other words this category datatypes are used for representing whole numbers in the memory fo the computer.
+            Integer category datatypes are divided into 4 types:
+            
+            S.no      Datatype      Size        Range   
+          ======================================================  
+            1.        byte           1 byte     -128 to +127
+            2.        short          2 byte     -32,768 to +32,767
+            3.        int            4 byte     -2,147,483,648 to +2,147,483,647
+            4.        long           8 byte     -9,223,372,036,854,775,808 to +9,223,372,036,854,775,807
+        
+        2. Float Category Datatype:
+           A float data or real data is one which is represented in the form of scale , precision.
+
+            e.g.  xxx.yyy
+            here xxx is called scale yyy is called precision.
+
+          In order to represent float data or real data in the main memory of the computer we use the float category data types.
+          Float category data types are divided into 2 types 
+
+          Sno.        Data Type       Size      Range     No. Of Dec places
+        =====================================================================
+          1.          float           4 byte                  6
+          2.          double          8 byet                  14
+               
+    
+    * Object Oriented Programming contains 8 principles they are :
+    
+    1. Classes
+    2. objects
+    3. Data Abstraction
+    4. Data Encapsulation
+    5. Inheritance
+    6. Polymorphism
+    7. Dynamic Binding
+    8. Message Passing
+
+    1. Classes :- 
+          - Class concept is always used for developing user/programmer defined datatypes.
+          - To develop the class in java we use a keyword "class".
+          - Without class concept there is no Java Program.
+
+        Definition :
+             The process of binding the data members and associated methods in Single Unit. This single unit is known as class.
+          
+            - The data members of the class are also known as attributes or properties.
+            - The methods of the class are also know as behviours or accessories or member function.
+
+        - In object oriented programming lang. we have 2 categories of methods :
+           1. Member methods :
+              A member method is one which is available within the scope of the class and it can access the data of the class.
+
+           2. Non Member methods:
+              A non member method is one which is not available within the scope of the class and it can not access the data members of the class.
