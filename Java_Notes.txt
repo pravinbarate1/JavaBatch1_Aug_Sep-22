@@ -231,9 +231,52 @@ Java 5            JDK 1.5                     Tiger
           Sno.        Data Type       Size      Range     No. Of Dec places
         =====================================================================
           1.          float           4 byte                  6
-          2.          double          8 byet                  14
+          2.          double          8 byte                  14
                
+        3. Character Category Datatype :
+           - The range of char datatype is 0 to 65535.
+           - The default value is '\u0000' and that is the lowest range of Unicode.
+           - The default size(as mentioned above) 2 bytes because Java uses the Unicode system and not the ASCII code system.
+           e.g. char a = 'A';
+                char a;
+
+        4. Boolean Category Datatype : 
+           - Boolean Category Datatypes is used for representing or storing logical values i.e. true or false.
+           - In Java programming to represent boolean values or logical values we use a datatype called "boolean".
+           - boolean datatypes takes zero byte of main memory space becuase boolean datatype of java implemented by SUN microsystem with a concepts of flip-flops.
+           - A flip-flop is a general purpose register which stores one bit of information (one(1)) -> true or zero (0)  -> false)
+
+           Note :- In c or c++ boolean datatype is not available for representing true or false values but a true value can be treated as non-zero and false values can be represented by zero.
+           
+        Default Value for primitive Data Type :-
+        ==============================================
+        Datatype            Size
+        ==============================================
+        byte                0
+        short               0
+        int                 0
+        long                0
+        float               0.0
+        double              0.0
+        char                '\u000'
+        boolean             false
     
+    Variable in Java :-
+    ===================
+     - If we enter any input to the program then the input must be stored in the main memory of the computer in terms of variables.
+     - Without variables concept one can't represent or store the input of the user in the main memory of the computer. 
+     - Variables are also know as building blocks of the programming language.
+
+     Definition :- 
+              Variable is an identifier whose value is changing during execution of the program.
+
+    Rules :-
+      - When we write some Java applications we may use collection of variables. When we are using variables in Java the Java progammer is highly recommended to use the following rules.
+        - The first letter of the variable must be an alphabet.
+        - The lenght of the variable in Java can be allowed upto 32 characters.
+        - No special symbols are allowed except underscore and $.
+        - No special keywords/reserved words are allowed as variable.
+
     * Object Oriented Programming contains 8 principles they are :
     
     1. Classes
