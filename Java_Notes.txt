@@ -274,8 +274,112 @@ Java 5            JDK 1.5                     Tiger
       - When we write some Java applications we may use collection of variables. When we are using variables in Java the Java progammer is highly recommended to use the following rules.
         - The first letter of the variable must be an alphabet.
         - The lenght of the variable in Java can be allowed upto 32 characters.
-        - No special symbols are allowed except underscore and $.
+        - No special symbols are allowed except underscore(_) and $.
         - No special keywords/reserved words are allowed as variable.
+
+    * Variable Declaration :-
+      - The process of allocating Sufficient amount of memory space along with a variable name in the main memory of computer is know as variable declaration.
+      - Before using any variable in Java that variable must be declared.
+
+        Syntax :- 
+                 datatype v1,v2,v3,....vn;
+        Here datatype represents either fundamental or derived or user defined datatype.
+        v1,v2,....vn represents valid variable names of Java.
+
+        e.g : 
+             int a,b,C;
+             float f1,f2,f3;
+             char c1,c2,c3;
+             boolean b1,b2;
+
+      Let us consider the following statement
+
+        int a;
+
+      When the above statement is executed then the system will perform the following actions 
+
+       1. We get suffiecient memory space depends upon data type.
+          a is of type integer so it will get 4 bytes of memory allocation.
+       2. Whatever memory space is created in above statement the memory space is qualified by variable name a.
+       3. Each and every variable in Java must have a distinct or unique address. Address is for system to process the value and variable is for the programmer to access the value.
+       4. Memory is one of the essential components, the system will place default values depends on the datatypes. 
+        
+    * Initialization of variables :-
+      - The process of placing programmer defined value within the variable without placing default value is known as initialization of a variable.
+      -  Whenever we decided to place predecided values in the variables then we must choose the concept of initialization.
+
+      Syntaxt : 
+                datatype v1 = value1, v2 = value2,.....vn = valuen;
+            
+        - val1, val2,....,valn represents list of predecided values placing in the variables v1,v2,...,vn respectively.
+          e.g. 
+              float PI = 3.14f;
+              int a = 10, b = 20;
+
+        
+    * Constants in Java : "final" keyword.
+       - If we don't want to change the value of the variable then those variable values must be made as constants.
+       - Definition Of Constant : 
+                                 A constant is an identifier who's values can't be changed during execution of the program.
+       - In Java programming to make anything as constant we use a keyword "final".
+       - final is a keyword which is playing an important role in Java at three places they are :
+     
+      1. final at Variable Level :
+          - If we don't want to change the value of the variables then the variable value must be made as final. 
+          - In other words if want to make any variable value as a constant then that variable value must be made as final.
+
+          Syntax : -
+                     final datatype v1 = val1, v2 = val2,...,vn = valn;
+
+          e.g : 
+                     final float PI = 3.14f;
+                                 PI = PI + 1; // invalid
+                                 
+          - once the variable value is final whose value can't be changed.
+      
+      2. final at Method Level : 
+          - We know that each and every operations of our programming languages must be performed with respect to functions/methods.
+          - If we don't want to change the definition of the method then the method definition must be made as constant by using final keyword.
+          - If anothe words whenever we develop anothe method which is common for many number of Java programmers then such methods are highly recommended to make them as final.
+
+            Syntax :-
+                      final returntype methodName (list of final params if any)
+                      {
+                        //block of statement
+                      }
+
+            e.g. :-
+                    final float simpleInterest(float p, float t, float r){
+                      float = si = p * i * r;
+                      return si;
+                    }
+          - Once the method is final it is not possible to redefine or override.
+          
+                      
+      3. final at Class Level
+          - If we don't want to give the features of base class to the derived class, then the base class definition must be made as final.
+
+          Syntax : 
+                   final class <class name>{
+
+                   }
+
+          e.g. 
+                  final class Personal {
+
+                  }
+                  class others extends Personal //invalid
+                  {
+
+                  }
+          Once the class is final whose properties will not be inherited from base class to derived class.
+          Final class is never participated in inheritance process.
+
+
+
+
+         
+        
 
     * Object Oriented Programming contains 8 principles they are :
     
