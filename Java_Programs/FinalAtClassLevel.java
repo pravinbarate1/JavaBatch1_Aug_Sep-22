@@ -4,7 +4,7 @@ final class Rules{
     }
 }
 
-class ChangeRules{
+class ChangeRules {
     public void printRules(){
         System.out.println("Changing the rules");
     }
@@ -16,6 +16,7 @@ class FinalAtClassLevel{
         cr.printRules();
 
         Rules r = new Rules();
+        System.out.println(r);
         r.printRules();
     }
 }

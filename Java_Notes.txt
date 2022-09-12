@@ -373,12 +373,7 @@ Java 5            JDK 1.5                     Tiger
 
                   }
           Once the class is final whose properties will not be inherited from base class to derived class.
-          Final class is never participated in inheritance process.
-
-
-
-
-         
+          Final class is never participated in inheritance process.        
         
 
     * Object Oriented Programming contains 8 principles they are :
@@ -395,7 +390,7 @@ Java 5            JDK 1.5                     Tiger
     1. Classes :- 
           - Class concept is always used for developing user/programmer defined datatypes.
           - To develop the class in java we use a keyword "class".
-          - Without class concept there is no Java Program.
+          - Without class concept there is no Java Program.    
 
         Definition :
              The process of binding the data members and associated methods in Single Unit. This single unit is known as class.
@@ -409,3 +404,179 @@ Java 5            JDK 1.5                     Tiger
 
            2. Non Member methods:
               A non member method is one which is not available within the scope of the class and it can not access the data members of the class.
+          
+           In Java Programming member method concept is allowed but there is no concept called non-member methods.
+
+           In real world applications the description of the class can be expressed in the form of class diagrams & whose structure is give in the diagram.
+
+
+           E.g. Define or express a class Student with Suitable data members & methods.
+
+           The above diagram is common for all the object oriented language programmers & whose syntax is differing from one object oriented programming language to other lang.
+
+           Syntax for defining class:
+           ==========================
+           class <classname>{
+              variables or data member declaration;
+              methods or function definition;
+           }
+
+           Explanation : In the above syntax
+                1. class is keyword used for developing user/programmer defined datatype.
+                2. <classname> represents a Java valid variable name treated as name of the class. All the class names in Java are treated as user/programmer defined data types.
+                3. Whenever we define a class there is no memory space created for data members of the class, when we create object of the class then memory is allocated or created for the data members.
+                4. In Java programming we use all the class names for creating objects with respect to the class i.e with respect to a single class definition one can create multiple objects.
+                5. Variable declaration represents data members of the class.
+                6. Methods definition represents the type of the methods we use to perform some specific operations by making use of data members of the clas.
+                7. All the methods of the Java must be defined inside the class only i.e. Java programming never allows to define the methods outside the class and the methods of Java are know as member methods.
+                8. The definition of a class may or may not be terminated by semicolon.
+                9. Each and every class in Java have logical existance (no memory space is occupied where as every object in Java will have physical existance(Memory Allocated)).
+
+                e.g Define class Student
+
+                class Student{
+                  int id;
+                  String name;
+                  float m1,m2,m3;
+                  String collegeName;
+
+                  int getNoHoursStudy(){
+                    return n;
+                  }
+
+                  String getGrade(){
+                    return "Distinction";
+                  }
+
+                  float getTotalMarks(){
+                    return (m1+m2+m3)
+                  }
+                } // Student
+
+    2. Objects :
+        * Definition of Object :
+            1. Instance of a class is known as an object (Instance is nothing but allocating sufficient amount of memory space for the data members of the class.)
+            2. Each and every class variable is know as an object.
+            3. Grouped item is know as an object (Grouped item is a variable or identities which allows us to store multiple values either of same type or different type or both.)
+            4. Value form of class is object.
+            5. Blue print of a class is know as an object.
+            6. Real world entities are known as object.
+            7. Logical runtime entity is known as an object.
+
+        Object Creation :
+           When we create an object we get the sufficient memory space for the data members of class.
+           Creating an object in Java is nothing but following dynamic memory allocation by making use of "new" operators.
+           The "new" operator is known as dynamic memory allocation operator.
+           The operator new internally performs two types of operations, those are :
+              1. Allocating sufficient amount of memory space for the data members of the class.
+                 It takes an address of the class which is loaded in the main memory and places into LHS (Left Hand Side)variable i.e object variable.
+                 In java programming to create Object we have two syntaxes.
+
+                 1. <class_name> objectName = new <class_name>
+
+                 e.g. Student so = new Student();
+
+                 2. <class_name> objectName;
+                    objectName = new <class_name> 
+
+                  e.g Student so;
+                      so = new Student();
+
+                Statement 1 represents object declaration when the object is declared, whose default value is as per the object creatin address.
+                Statement 2 represents object referencing, whose default value initially would be null and when the object is referenced, memory space is created for the data members of the class and the object default value is not null.
+
+                  e.g. Student so;   // so is null  student object declaration
+                       so = new Student(); // Student object referencing  
+
+Date : 12-09-2022
+=================
+              
+                Q. Define Classloader subsystem.
+                -> A class loader subsystem is a program developed by Sunmicro System added as a part of JVM &  it is used for loading .class files from secordary memory to main memory.
+
+                Q. Difference Between Class and Object :
+                -> 
+                    Class :
+                       - The process of binding data members & associated methods in a single unit is know as class.
+                       - When we define a class there is no memory space for the data members of the class.
+                       - All the classes in Java will have logical existance.
+                       - The definition of a particular class will exists only once.
+                       - When we execute the Java Program class will be loaded in the main memory. After loading the class in the main memory object creation can be possible.
+
+                    Object :
+                       - The class variable is know as object.
+                       - When we create an object we get the memory space for data members for the class.
+                       - All the obejects in Java will have physical existance.
+                       - With respect to one class, one can create multiple objects.
+                       - After loading the class in the main memory object creation can be possible.
+
+        * Types of data members : 
+                Each & Every Java Program must be written with respect to the class concept. We know that a class is containing data members & methods.
+                The data members of the class are classified into two types, they are :
+                    1) Instance/non-static data members.
+                    2) Class / Static data members.
+
+                1. Instance/Non Static data members :
+                     - Instance data members are those whose memory space is creating each and every time whenever an object is created.
+                     - If our class is containing collection of data members and we are placing specific values then those data members are recommended to take as instance data members.
+                     - Programmatically to make any data member as instance data member whose declaration should not be preceded by a keyword 'static'.
+                     - Syntax :
+                               datatype v1,v2,...vn;
+                     - Each & every instance data member must be accessed with respect to object name.
+                         e.g. objname.IDM(Instance Data Member Name)
+                     - Instance data members are also known as object level data members because they depends on object and independent from classname.
+                     - e.g : int sid, pin;
+
+                2. Static Data Members :
+                     - Static data members are those whose memory space is creating only once when the class is loaded in the main memory irrespective of number of obejcts are created.
+                     - If our class is containing collection of data members which are containing common values or fixed values then the data members of the class are recommendedto take as static data members.
+                     - Programmatically to make any data member as static data members whose declaration must be preceded by a keyword "static".
+                     - Syntax :
+                                static datatype v1, v2, ....vn;
+                     - Each & every static data members must be accessed with respect to class name.
+                        e.g :
+                             classname.SDM(Static Data Member Name)
+                     - The values of static dat members are always sharable.
+                     - static data members are also know as class level data members because they depends on class & independent from object name.
+                     - e.g : static int sid, pin;
+
+        * Types of Methods In Class :
+                A class is containing collection of data members and methods.
+                The methods of the class can be divided into two types.
+
+                1) Instance / non-static methods.
+                2) static methods
+          
+              1. Instance / non-static methods :
+                     - Instance methods are those which are recommended to perform repeated operations such as reading records from the file, reading records from the database, etc.
+                     - Programmatically instance methods definition should not be preceded by a keyword "static".
+                     - Syntax :
+                               returntype methodname(list of formal parms if any)
+                     - Each & every instance method must be accessed with respect to objectName.
+                        e.g. objname.instanceMethodName()
+                     - The result of instance is not sharable.
+                     - Instance methods are know as object level methods because they depends on object & independent from classname.
+                       e.g. 
+                             void getTotal(){
+                              total = m1+m2+m3;
+                             }     
+
+              2. Static Methods :
+                     - Static methods are those which are recommended to perform on time operations such a opening a file, obtaining the database connection etc.
+                     - Programmatically static methods definition must be preceded by a keyword static.
+                     - Syntax : 
+                               static returnType methodName(list of formal){
+                                  //Block of statements;
+                               }
+                     - All the static methods in Java must be accessed with respect to classname.
+                        e.g. classname.staticMethodName
+                     - The result of static method are always sharable.
+                     - static methods are also known as class level methods because they depends on classname and independent from object.
+                     - e.g.
+                           public static void main(String [] args){
+                             s1.getTotal();
+                             s2.getTotal();
+                           }
+
+
+                    
