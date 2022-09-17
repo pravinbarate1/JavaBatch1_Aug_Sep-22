@@ -562,7 +562,7 @@ Date : 12-09-2022
                              }     
 
               2. Static Methods :
-                     - Static methods are those which are recommended to perform on time operations such a opening a file, obtaining the database connection etc.
+                     - Static methods are those which are recommended to perform one time operations such a opening a file, obtaining the database connection etc.
                      - Programmatically static methods definition must be preceded by a keyword static.
                      - Syntax : 
                                static returnType methodName(list of formal){
@@ -577,6 +577,79 @@ Date : 12-09-2022
                              s1.getTotal();
                              s2.getTotal();
                            }
+
+17-09-2022
+==========
+                    Note : A class can contain instance data members & static data members, instance methods &  static methods.
+
+                    Instance data members & instance methods must be accessed with respect to object name and static data members and static methods must be accessed with respect to class name.
+
+                    System.out.println();
+                    System.out.print();
+
+                    The above statements are used for displaying the result of the Java program on the console either by line by line or int the same line.
+                    The technical meaning of the above statements is given below.
+                     - println() & print() methods are two predefined overloaded instance methods presents in a predefined class called PrintStream.
+                     - To access these methods we need an object of PrintStream class but it is not available freely outside.
+                     - An object of PrintStream class is called out created in another predefined class called System as a static data member.
+                     - Hence println & print method can be accessed as follows.
+                               System.out.println();
+                               System.out.print();
+
+                     - The following sample code gives the devlopment aspect of the above statements.
+
+                          class System{
+                              static PrintStream out = new PrintStream();
+                          }
+
+                          class PrintStream{
+                            public void println(String){
+
+                            }
+
+                            public void print(int){
+
+                            }
+                          }
+
+                      e.g. int a = 10;
+                           System.out.println(a); // 10
+                           System.out.println("val of a = " +a);
+                           Sytem.out.println(a + "is the Value of a");
+
+        * Structure of the Java program :-
+                 When we write any program in any programming language it is mandatory for the programmer to follow the standard structure.
+                 As a Java programmer to write any Java program, we follow the following standard structure:
+
+                   package details;
+
+                   class <class_name>{
+                      data members;
+
+                      user defined methods
+
+                      public static void main(){
+                        Block of statements;
+                      }
+                   }
+
+        In the above structure :-
+        1) Package details represents collection of classes, interfaces & subpackages etc.
+           If we use any predefined classes and interfaces as a part of our Java program then it is mandatory to Java programmer to specify in which package those classes & interfaces present.
+        2) Each & every Java program must start with concept of class without class name there is no Java program.
+        3) Class name represents a Java Valid variable name treated as class name, we know that whenever we define a class, there is no memory space for a data members & methods of the calss. 
+           All the class names in Java are defined as user/programmer defined datatypes & they can be used for creating objects.
+        4) Data members represents either instance or static & they are selected based on the class.
+        5) User defined methods represents either instance or static devloped by the Java programmer to perform specific operation according to the user requirement & these types or methods are know as business logic methods.
+        6) Each & every Java program execution starts from main method hence this method is know as program driver.
+        7) Since main method is not return any value so that it's return type must be void.
+        8) Since main methods execution is only once throughout the life of the entire Java program, the nature of the main method must be staic.
+
+        Since main method can be accessed universally whose access specifier must be public(Universal Access).
+        Each & every main method must take array of objects of String class.
+        Block of statements represents set of executable statements which interns calls user defined methods.
+        
+
 
 
                     
