@@ -623,6 +623,8 @@ Date : 12-09-2022
 
                    package details;
 
+                   import statements;
+                   
                    class <class_name>{
                       data members;
 
@@ -648,8 +650,73 @@ Date : 12-09-2022
         Since main method can be accessed universally whose access specifier must be public(Universal Access).
         Each & every main method must take array of objects of String class.
         Block of statements represents set of executable statements which interns calls user defined methods.
-        
 
+19-09-2022
+==========
+          * length :
+          =========
+                  - Length is one of the implicit variable created automatically by the JVM & supplied to every java program for two purposes.
+                    1. To find the number of elements or size of the array.
+                    2. To treat the fundametal arrays as objects because Java is one of the pure object oriented programming language.
 
+                    Syntax :-
+                    =========
+                              Arrayname.Length
+                        
+                    e.g. 
+                         1. int a = {10,20,30};
+                          System.out.println("No. of elements = "+a.length);
+                         
+                         2.String s [] = {"abc","pqr","java"};
+                           System.out.println("No. of Names = "+s.length); 
 
-                    
+                           for(int i = 0; i< s.length; i++){
+                              System.out.prinln(s[i]);
+                           }
+
+        * Accessing the data dynamically :
+        ==================================
+                                          Accessing the data dynamically is nothing but entering the values to the Java program at runtime.
+                                          In Java programming to access the values dynamically we have three approaches they are 
+                                             1. By using command line arguments.
+                                             2. By using keyboard.
+                                             3. By using properties file (Resource Bundle).
+
+          1) By using command line arguments:
+          ===================================
+          Q. Why Java main methods takes array of objects of String class as a parameter?
+          => Every main methods types array of objects of String class because to accept command line arguments.
+             The number of values which we are passing to the Java program from the command prompt are known as command line arguments.
+
+             e.g : > java SumDemo 60 70
+
+            Here 60 & 70 are command line arguments.
+            
+          1. When we enter any command line arguments to the Java program they are by default treated as String data.
+          2. All the command line arguments are by default passing to main method.
+          3. All the command line arguments must be holding main method by taking a String paramerter.
+          4. Since command line arguments are unlimited/dynamic, main method is holding all the command line arguments in a array variable in a String Type.
+          5. While we are using array variable of String type in the main method one can't specify the size of the array.
+          6. Since Java is pure object oriented programming String data which is available in main method must be represented by using a predefined class called.
+          7. Therefore every main method must take array of objects of String class for holding command line arguments.
+
+          * Write a Java program to print or to accept command line arguments.
+
+          Note : When we execute the Java program jvm always look for that main method which is taking array of objects of String class but not for other main methods which are taking different types.
+20-09-2022
+===========
+          * Converting String data into fundamental or Numerical data:-
+          =============================================================
+                          When we pass any command line arguments to the Java program by default the command line arguments are treated as String data. We know that on String data one can't perform numerical manipulations hence it is highly desirable to convert String data into numerical or fundamental data.
+
+                          The following table gives fundamental datatype corresponding wrapper class and conversion method from String data to fundamental data.
+
+                          Datatype     Wrapper Class Name         Conversion method from String to fundamental datatypes
+                          ===============================================================================================
+                          byte         Byte                       public static byte parseByte(String)  
+                          short        Short                      public static short parseShort(String)
+                          int          Integer                    public static int parseInt(String)
+                          long         Long                       public static long parseLong(String)
+                          float        Float                      public static float parseFloat(String)
+                          double       Double                     public static double parseDouble(String)
+                          boolean      Boolean                    public static boolean parseBoolean(String)
