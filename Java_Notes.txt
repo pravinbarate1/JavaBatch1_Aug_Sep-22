@@ -720,3 +720,391 @@ Date : 12-09-2022
                           float        Float                      public static float parseFloat(String)
                           double       Double                     public static double parseDouble(String)
                           boolean      Boolean                    public static boolean parseBoolean(String)
+
+21-09-2022
+==========
+          Q. Define a Wrapper class? Explain it's purpose.
+          => Wrapper classes are the predefined classes which are existing for each and every predefined datatype.
+             The basic purpose of wrapper classes is that converting the data from the String into Fundamental datatypes.
+
+*Comments:-
+  A comment is a statement which explains what the program does or explains the narations of the programs.
+
+  1. Single line comment:
+    // Single line comment     -> C++ style  
+    /*single line comment*/    -> C style   
+
+  2.Multiline Comment/paragram:
+
+    /*
+	....
+	multiple line comment
+	...
+    */
+
+  3. document/html comment:
+     /**
+      *
+      *
+      *...*/
+
+
+  javadoc Addnum.java   -> java documentation generation from document comment.
+  .\javadoc.exe -d d:\AddNum\doc D:\Java_Batch1\JavaBatch1_Aug_Sep-22\Java_Programs\AddNum.java
+
+  In above command -d option specify where to generate the javadoc. If the specified folder is present in that location it will generate inside that folder if not present it will create a new folder and then generate a java doc.
+  javap Addnum          -> java profiler
+
+
+*Keywords :- predifined words by programming language and it has some special meaning.
+----------
+1.abstract  
+2.assert  
+3.byte 
+4.break 
+5.boolean 
+6.class 
+7.const 
+8.catch
+9.case 
+10.continue 
+11.char 
+12.do 
+13.double 
+14.default 
+15.else 
+16.extends
+17.enum 
+18.for 
+19.float 
+20.final 
+21.finally 
+22.false 
+23.goto 
+24.if 
+25.int
+26.interface 
+27.implements 
+28.instanceof 
+29.long 
+30.new 
+31.native 
+32.package
+33.private 
+34.protected 
+35.public 
+36.return 
+37.super 
+38.switch 
+39.static
+40.synchronized 
+41.try 
+42.this 
+43.throw 
+44.throws 
+45.transient 
+46.void 
+47.volatile 
+48.while
+
+The keywords are reserved words which you can use as per the predefined meaning and you can't use it for the userdefined purpose or you can't redefine it or re declare it.
+
+Operators in Java:-
+========================
+1. Unary Operators -> one operator & one operand
+                      e.g. -y, +x
+2. Binary operator -> one operator, two operands
+                      e.g. x-y, x+y
+3. Ternary Operator -. Two Operators & three operands
+                       a>b?c:b;
+
+Types Operators:-
+
+1. Assigment operator   =
+    e.g int a = 10;
+
+2. Arithmetic Operator: -,+,*,/,%,++,--
+   e.g int a = b+c;
+
+3. Relational Operator/Comparison operator: 
+    ">"   ==> greater than operator
+    "<"   ==> less than operator 
+    ">="  ==> greater than or equal to operator
+    "<="  ==> less than or equal to operator
+    "=="  ==> equal to or double equal to operator
+    "!="  ==> not equal to operator
+
+      e.g. if(a>b){
+
+          }
+
+4. boolean/logical operator: 
+   1. &&   ==> ampersand or and operator
+   2. ||   ==> or operator
+   3. !    ==> not operator
+     
+     e.g. int a = 40, b = 20, c = 30, d = 40;
+     
+     if(a>b && c>d){  // here a>b evaluates to true & c> d false 
+
+     }
+
+     int a = 20, b = 30;
+
+     if(!(a == b) ){
+
+     }
+
+ && evaluation happen like below :-
+
+     true && true = true
+     false && true = false
+     true && false = false
+     false && false = false
+
+|| evaluation happens like below :-
+    true || true = true
+    true || false = true
+    false || true = true
+    false || false = false
+
+! evaluation happens like below
+    boolean a = true;
+    boolean b = false;
+
+    boolean a1 = !a; // here negation of a would false as it is holding true value
+    boolean b2 = !b; // here negation of b would be true as it is holding false value.
+
+    int a = 10, b = 20;
+
+    if(a != b){ // condition would be evaluated as true
+
+    }
+  
+  int a = 20, b = 20;
+
+    if(a != b ){ // condition would be evaluated as false
+
+    }
+
+5. bitwise operator:  
+   &  ==> bitwise and
+
+     a = 5 = 0101(In Binary)
+     b = 7 = 0111(In Binary)
+
+     0101
+   & 0111
+   =======
+     0101 ==> decimal value is 5
+
+   |  ==> bitwise or 
+
+     a = 5 = 0101(In Binary)
+     b = 7 = 0111(In Binary)
+
+     0101
+   | 0111
+   =======
+    0111 ==> decimal value is 7
+
+   ^  ==> bitwise XOR 
+   a = 5 = 0101(In Binary)
+     b = 7 = 0111(In Binary)
+
+     0101
+   ^ 0111
+   =======
+     0010 ==> decimal value is 2
+
+   << ==> bitwise left shift 
+   
+      int a = 64;
+      int res = a << 2;
+
+   >> ==> bitwise right shift 
+
+      int a = 64;
+      int res = a >> 2;
+
+   ~  ==> bitwise complement
+
+    e.g int a = a^b;
+
+    0101  -> 5
+0111  -> 7
+=====
+0010   
+
+ 0101
+~1010
+
+0101 << 2
+
+0101
+010100
+
+010100
+
+010100
+
+
+0101 >> 2
+
+000101
+
+6. Compound/shorthand Assignment operator:  +=, -=, *=, /=, %=
+    e.g int a = 10, b = 5;
+            a+=b;
+
+            int a = 10;
+int b = 20;
+
+a = a+b; 
+
+a += b; // it will evaluate to this expression a = a + b;
+a -= b;  // shorthand or compound assignment
+a *= b;
+a /= b;
+a %= b;
+
+7. conditional/ternary operator =  ?:
+     e.g a>b?c:b;
+     
+     * condition ? if true this statement is evaluated : if false this statement is evaluated
+
+condition ? if true this statement is evaluated : if false this statement is evaluated
+
+int a = 10;
+int b = 20;
+
+int c = a>b ? a:b;
+
+int c = a; // c's value is 10
+int c = b; // c's value is 20
+
+if(a>b){
+       c = a;
+}else{
+       c = b;
+}
+
+9. Type operator: instanceof
+
+
+A -> B -> C e.g if(c instanceof a)
+
+ A a = new C();
+
+ ++a a++   // here a is operand and ++ is operator
+
+a + b;    // a & b are operand and + is operator
+
+a>b?true:fales  // ? & : is operator & a>b, true, false is operand.
+
+int a = 10;           // here a & 10 is operant and = is operator 
+String str = "Java";
+float f = 10.00;
+
+int a = 10; 
+int b = 20; 
+
+int c = a + b; // first addition would calculated and then assigned to c variable.
+
+int a = 10;
+System.out.println("a = "+a);  // output would be 10 
+a++;  // ++ is increment operator which increases value of a variable by 1 i.e. 10+1 = 11
+System.out.println("a = "+a); // output would be 11
+
+Note : In Java *(multiplication), /(division) %(modulus ) having first precedence over + and -  operator.
+       If *, / and % comes in single expression without round brackets so priority would be give to the left most operator and followed. 
+
+
+Relational operator or Comparison Operator:
+
+int a  = 10;
+int b = 20;
+
+boolean c =  a > b;  // true or false
+
+if(a > b){  // false
+       System.out.println("a is greater");
+}
+
+
+* Conditional Statement :
+=========================
+
+1. if statement :
+=================
+   if statement is used for the decision making based on the expression evaluation on the if condition.
+   If condition evaluation return true then only if blocked is getting executed else it won't.
+
+   Syntax :
+
+            if(condition){
+
+            }
+  e.g 
+          if(a>b){
+              a = a+b;
+              System.out.print("a is greater");
+          }
+
+          if(a>b)
+            System.out.println("a is greater....");
+ 
+2. if..else statement
+=======================
+   if..else statement is used if one condition true do this or else condition not true do that.
+   When condition evaluates to true it will execute the if block if condition is not true it will exectue else block.
+
+   Syntax :-
+           if(condition){
+            //code block
+           }else{
+            //code block
+           }
+
+    e.g. 
+          if(a>b){
+            System.out.println("a is greater");
+          }else{
+            System.out.println("b is greater");
+          }
+
+          if(a>b)
+            System.out.println("a is greater");
+          else
+            System.out.println("b is greater");
+
+3. if...elseif..else statement :
+================================
+  if there are multiple condition we have to check in our logic or code then we have to go for the if..elseif..else conditonal statement.
+  if first condition is true it will execute the first if block and then again check for the next elseif block for the condition, if that false it will continue for the next condtions until it reaches to the else.
+
+  Sysntax :
+  =========
+            if(condition1){
+              //block of code
+            }else if(condition2){
+
+            }else if(condition3){
+
+            }else{
+
+            }
+  e.g.
+         int a = 10, b = 20, c = 30;
+
+         if(a>b && a> c){
+          System.out.println("a is greater");
+         }else if(b>a && b > c){
+          System.out.println("b is greater");
+         }else{
+          System.out.pritnln("c is greater");
+         }
+
+
+
+
