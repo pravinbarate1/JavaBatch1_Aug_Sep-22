@@ -8,6 +8,5 @@ class ConditionalStatement{
         }else{
             System.out.println("Sorry !! "+name + " you are not eligible for the voting");
         }
-
     }
 }

@@ -1105,6 +1105,94 @@ if(a > b){  // false
           System.out.pritnln("c is greater");
          }
 
+* switch case statements :
+==========================
+  switch case statements are used for checking the condition. 
+  You can specify multiple condition in switch case same if..else if.. else.
+  You can specify N number of case values for switch statements.
+  You can't define duplicate cases or values are not allowed.
+
+  Syntax :
+  =========
+           switch(expression or condition){
+              case value1:
+                // block of statements
+              break;
+
+              ...
+
+              case value2:
+                 //bloack of statements.
+              break;
+
+              default :
+                 // statements              
+           }
+
+      e.g.
+               switch(day){
+
+                case 1:
+                    weekDay = "Monday";
+                break;
+                .....
+               }
+
+ Nested switch case :
+ ====================
+    You can write Nester switch case that means switch within switch case.
+
+  Syntax :
+  ========
+           switch(expression){
+            case 1:
+              //block of statement;
+              break;
+
+              case 2:              
+                  switch(expression){
+                    case 1:
+                      //block of statement
+                      break;
+
+                      default:
+
+                  }
+              break;
+              default:
+                  //block of statement
+           }
+
+Looping Statement in Java:-
+==========================
+                           Generally loops are used to perform some task in a repetitive manner without rewriting it's logic for n number of times.
+
+    * Initialization :
+                      It is the initial condition which is executed once when the loop starts.Here, we can initialize the variable, or we can use an already intialized variable. It is an optional condition.
+
+    * Condition :
+                  It is the second condition which is executed each time to test the condition of the loop. It continues execution until the condition is false. It must return boolean value either true or false. It is an optional condition.
+
+    * Increment/Decrement:
+                          It increments or decrements the value of the variable. It is an optional condition.
+    * Statement:                       
+                  The statement of the loop is executed each time until the second condition is false.
+
+   1. while Loop :
+   ================  
+                    While is loop is used to perform repetitive tasks in top down manner.
+
+        Syntax :
+        =======
+                  Initialization
+                  while(condition){
+                    // block of statements.
+                    increment or decrement;
+                  }  
+                  
+                       
+   2. do..while Loop
+   3. for loop
 
 
 
