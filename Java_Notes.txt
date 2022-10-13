@@ -1180,7 +1180,7 @@ Looping Statement in Java:-
 
    1. while Loop :
    ================  
-                    While is loop is used to perform repetitive tasks in top down manner.
+                    While is loop is used to perform repetitive tasks in top down manner. Condition is checked first before entering into the loop.
 
         Syntax :
         =======
@@ -1189,10 +1189,66 @@ Looping Statement in Java:-
                     // block of statements.
                     increment or decrement;
                   }  
-                  
-                       
-   2. do..while Loop
-   3. for loop
 
+        Nested While loop
+        =================
+                           Initialization
+                           while(condition){  // outer loop
+                            initialization
+                              while(condition){   // Inner loop
+                                //execution statements
+                                Increment or decrement
+                              }
+                            Increment or decrement
+                           }
 
+   2. do..while Loop :
+             do..while loop is kind of loop where condition is checked after execution of the loop.
+
+             Syntax :
+             ========
+                         initialization;
+                         do{
+                            //block of statement
+                            Increment or decrement
+                         }while(condition);
+
+          Nested do...while:
+          =================
+                             intialization;
+
+                             do{
+                                //block of statement
+
+                                do{
+                                    //block of statements
+                                    increment or decrement
+                                }while(condition);
+
+                                increment or decrement
+                             }while(condition);
+             
+   3. for loop :
+   ============
+                For loop is another type of loop where you can write intialization, condition and increment/decrement in single line.
+
+                Syntax:
+                =======
+                        for(initialization; condtion; increment or decrement){
+
+                        }
+
+                e.g.
+                ===
+                        for(int i = 1; i<=5; i++){
+                            System.out.println(i);
+                        }
+
+              Nested for loop:
+              ================
+                              for(initialization; condtion; increment or decrement){
+                                  for(initialization; condtion; increment or decrement){
+
+                                  }
+                              }
 
