@@ -1252,3 +1252,66 @@ Looping Statement in Java:-
                                   }
                               }
 
+* Arrays in Java :- 
+                - Array is a sequential representation of the data where we can store multiple values of same type in a single variable.
+                - Memory for arrays are allocated dynamically.
+                - Arrays are stored in the continuos or consecutive memory.
+                - Arrays are objects in Java we can find their length using the object property "length".
+
+                Syntax :
+                          type variableName[];
+                               or
+                          type  [] variableName;
+
+                e.g 
+                          int arr [];   // array of integer
+                          int [] arr;
+
+                          byte barr[];
+                          short shortArr[];
+                          boolean barr[];
+                          long larr[];
+                          float farr [];
+                          double darr[];
+                          char charArr[];
+
+                          Student student[];   
+                          Object obj[];        // array of object 
+                          Collection [] carr;  // array of collection   
+
+
+                int a = 10;
+                10 20 30 40 50 
+
+                int [] arr = {10,20,30,40,50};  // valid 
+
+                int [] arr = {10,20.30,30L,'a',"abc"}; // invalid
+
+                int a = 10; // valid
+                int a = "abc"; // invalid
+                inv a = 'a';  // invalid
+        Intialization or Instantiation of Array :
+                                When we declare array only reference of an array is created.
+                                Whenever we initializat the array then only memory allocation happen.
+
+                                Syntax :
+                                         variableName = new type [size];
+
+                                e.g.
+                                          int arr[]; // declaration of array
+                                          arr = new int [5];  //allocation of memore to array
+
+                                          int [] arr = new int [5];  // single line declaration and allocation
+
+                                          - Whener we do the intialization of array by default the elements in the array are kept as the default value as per it's type.
+
+            - Array index always starts from 0 and ends with arrays size-1;
+              
+                e.g. int arr [] = new int[5];
+                     size of array is 5;
+
+                     index starts from zero (0) and it is called lower bound.
+                     index ends with size-1 i.e 5-1 is 4 and 4 is the upper bound for the array.
+
+          * Array Literal :
+                          int [] arr = new int[]{10,20,30,40,50};          
